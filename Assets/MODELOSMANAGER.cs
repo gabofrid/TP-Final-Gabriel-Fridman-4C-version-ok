@@ -31,7 +31,7 @@ public class MODELOSMANAGER : MonoBehaviour
             if (currentIndex < modelos.Length)
             {
                 ActivatebyIndex(currentIndex);
-                DeActivatebyIndex(currentIndex);
+                DeActivatebyIndex2(currentIndex);
             }
         }
     }
@@ -52,5 +52,10 @@ public class MODELOSMANAGER : MonoBehaviour
     void DeActivatebyIndex(int index)
     {
         modelos[index - 1].SetActive(false);
+    }
+
+    void DeActivatebyIndex2(int index)
+    {
+        modelos[index + 1].SetActive(false);
     }
 }
